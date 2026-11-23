@@ -16,3 +16,16 @@ body.recording .sidebar{display:flex}body.recording.sidebar-hidden .sidebar{disp
 @media(max-width:760px){body.recording .sidebar{display:none}body.recording #showSidebar{display:grid}}
 body:not(.has-messages) .compose-tools{top:auto;bottom:11px}
 body.recording #settingsButton{visibility:hidden}
+
+/* 실제 화면만 표시: 운영 도구는 단축키로 접근 */
+:root{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+.top-actions,#settingsButton,.sidebar-bottom-note{display:none!important}
+.temporary-chat{margin-left:auto;color:#adadad;width:36px;height:36px}.temporary-chat svg{width:20px;height:20px}
+body:not(.has-messages) .conversation{display:none}
+.sidebar .side-caption{padding-top:27px}
+.sidebar-empty{padding-bottom:10px}
+.assistant-body{font-weight:400;line-height:1.8}.assistant-body strong{font-weight:600}
+body.recording .composer-note{display:block}body.recording .composer-wrap{padding-bottom:15px}
+
+.welcome h1{font-size:24px;font-weight:400}.home-shortcuts{display:flex;flex-direction:column;gap:24px;padding:36px 18px 0;color:#aaa;font-size:16px}.home-shortcuts>span{display:flex;gap:18px;align-items:center;min-height:27px}.home-shortcuts svg{width:17px;height:17px;color:#777}.has-messages .home-shortcuts{display:none}body:not(.has-messages) .compose-tools{position:absolute;left:auto;right:calc(100% - 32px);top:4px;bottom:auto}.home-shortcuts{pointer-events:none}
+body:not(.has-messages) .composer-bottom{position:static;min-height:0}body:not(.has-messages) .composer-right{position:absolute;right:7px;top:7px}body:not(.has-messages) .compose-tools{position:absolute;left:11px;right:auto;top:11px;bottom:auto}
